@@ -27,6 +27,8 @@ This makes your site live on the internet.
 
 Cloning downloads your repo to your computer so you can edit it.
 
+### Option A: VS Code
+
 1. In your forked repo, click the green **Code** button
 2. Copy the HTTPS link
 3. Open a terminal and run:
@@ -42,19 +44,42 @@ cd REPO-NAME
 code .
 ```
 
+### Option B: RStudio
+
+1. In your forked repo, click the green **Code** button and copy the HTTPS link
+2. Open RStudio and go to **File → New Project → Version Control → Git**
+3. Paste the HTTPS URL into the **Repository URL** field
+4. Choose where to save it locally, then click **Create Project**
+
+RStudio will clone the repo and open it as a project automatically.
+
 ---
 
 ## 👀 Step 4 — Preview Your Site Locally
 
-Before pushing changes to GitHub, preview them instantly on your computer:
+Before pushing changes to GitHub, preview them instantly on your computer.
+
+### Option A: VS Code
+
+Open a terminal and run:
 
 ```bash
 quarto preview
 ```
 
-This opens a live preview in your browser at `http://localhost:XXXX`. It auto-refreshes every time you save a file — no need to re-run the command.
+### Option B: RStudio
 
-Press `Ctrl+C` in the terminal to stop the preview.
+Run the same command from RStudio's built-in **Terminal** tab (bottom pane):
+
+```bash
+quarto preview
+```
+
+Alternatively, if you have the **Quarto** extension installed in RStudio, you can click the **Render** button at the top of any `.qmd` file to preview that page directly.
+
+---
+
+Both options open a live preview in your browser at `http://localhost:XXXX` that auto-refreshes every time you save a file. Press `Ctrl+C` in the terminal to stop the preview.
 
 ---
 
@@ -76,7 +101,9 @@ Open each file and replace the `✏️` placeholders with your real content:
 
 ## 🚀 Step 6 — Build and Deploy
 
-When you're happy with your changes, build the site and push it to GitHub:
+When you're happy with your changes, build the site and push it to GitHub.
+
+### Option A: VS Code
 
 ```bash
 # 1. Build the site into the docs/ folder
@@ -91,6 +118,15 @@ git commit -m "Update personal info and projects"
 # 4. Push to GitHub
 git push
 ```
+
+### Option B: RStudio
+
+1. Run `quarto render` in RStudio's **Terminal** tab to build the `docs/` folder
+2. In the **Git pane** (top-right), check the boxes next to all changed files to stage them
+3. Click **Commit**, write your commit message, and click **Commit**
+4. Click the **Push** (↑) button to push to GitHub
+
+---
 
 GitHub Pages will automatically pick up the new `docs/` folder and update your live site within a minute.
 
