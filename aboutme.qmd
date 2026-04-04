@@ -10,6 +10,7 @@
 title: "About Me"   # ✏️ This becomes the page title shown in the browser tab
 ---
 
+```{=html}
 <!-- ============================================================
   PROFILE PHOTO
   - Replace "headshot.jpg" with your actual image filename
@@ -19,16 +20,20 @@ title: "About Me"   # ✏️ This becomes the page title shown in the browser ta
     → try "50% 50%" for dead center, or "50% 20%" to crop even higher
   - border: adds a solid dark border around the photo
   ============================================================ -->
+```
+
 <p style="text-align: center;">
-  <img src="headshot.jpg"
-       width="400px"
-       height="400px"
-       style="object-fit: cover;
+
+```{=html}
+<img src="headshot.jpg" width="400px" height="400px" style="object-fit: cover;
               object-position: 50% 32%;
               border: 3px solid #333;
               margin-bottom: 30px;"/>
+```
+
 </p>
 
+```{=html}
 <!-- ============================================================
   BIO / INTRODUCTION
   ✏️ Replace the placeholder below with 2–4 sentences about yourself.
@@ -37,25 +42,31 @@ title: "About Me"   # ✏️ This becomes the page title shown in the browser ta
     I'm passionate about data visualization and building tools that make
     information more accessible. Outside of class, I love hiking and photography.
   ============================================================ -->
+```
 
 ✏️ Write your bio here — who you are, what you study, and what you care about.
 
+```{=html}
 <!-- ============================================================
   RESUME LINK
   - "Example Resume" is the clickable link text — ✏️ change to "My Resume" or similar
   - example_resume.pdf is the filename — ✏️ rename to match your actual file
   - Make sure your PDF is saved in the same folder as this .qmd file
   ============================================================ -->
+```
 
 [✏️ My Resume](example_resume.pdf)
 
+```{=html}
 <!-- ============================================================
   LINK TO PROJECTS PAGE
   - proj.qmd refers to your other page — leave this as-is unless you renamed that file
   ============================================================ -->
+```
 
 To view more information about my projects, please visit the [Projects](proj.qmd) tab.
 
+```{=html}
 <!-- ============================================================
   CONTACT INFORMATION
   ✏️ Replace every placeholder in angle brackets <> with your real info
@@ -69,8 +80,9 @@ To view more information about my projects, please visit the [Projects](proj.qmd
     - Replace <copy link to linkedin> with your full LinkedIn URL
       Example: https://www.linkedin.com/in/janesmith
   ============================================================ -->
+```
 
 **Contact Information:**
 
-- Email: [✏️ youremail@gmail.com](mailto:youremail@gmail.com)
-- LinkedIn: [✏️ Your Name](✏️ https://www.linkedin.com/in/yourprofile)
+-   Email: [✏️ youremail\@gmail.com](mailto:youremail@gmail.com)
+-   LinkedIn: [✏️ Your Name](✏️%20https://www.linkedin.com/in/yourprofile)
